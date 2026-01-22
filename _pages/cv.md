@@ -16,6 +16,3 @@ redirect_from:
   style="border: 1px solid #ddd; border-radius: 8px;"
 ></iframe>
 
-<p>
-If the PDF doesn’t display in your browser, use the download link above.
-</p>
