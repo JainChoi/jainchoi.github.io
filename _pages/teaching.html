@@ -5,16 +5,16 @@ permalink: /teaching/
 author_profile: true
 ---
 
-<h2>Teaching Assistant Experience</h2>
+<h2>Teaching Assistant</h2>
 
 <ul>
   <li>
     <strong>ICPSR, University of Michigan</strong>
     <ul>
-      <li><em>Bayesian Modeling for the Social Sciences I</em> — Summer 2026; Summer 2025</li>
-      <li><em>Introduction to Computing for Data Analysis</em> — Summer 2026</li>
-      <li><em>Introduction to the LaTeX Text Processing System</em> — Summer 2026</li>
-      <li><em>Introduction to Python</em> — Summer 2025</li>
+      <li><em>Bayesian Modeling for the Social Sciences I</em> (Summer 2026, Summer 2025)</li>
+      <li><em>Introduction to Computing for Data Analysis</em> (Summer 2026)</li>
+      <li><em>Introduction to the LaTeX Text Processing System</em> (Summer 2026)</li>
+      <li><em>Introduction to Python</em> (Summer 2025)</li>
     </ul>
   </li>
   <li>
@@ -23,16 +23,16 @@ author_profile: true
       <li>
         <strong>Graduate courses</strong>
         <ul>
-          <li><em>Linear Models</em> — Teaching Assistant / Grader; Spring 2025</li>
-          <li><em>Political Data Analysis</em> — Teaching Assistant / Grader; Fall 2026, Fall 2025, Fall 2024, Spring 2023</li>
+          <li><em>Linear Models</em> (Spring 2025)</li>
+          <li><em>Political Data Analysis</em> (Fall 2026, Fall 2025, <a href="/files/teaching/pda_fall2024_eval.pdf" target="_blank" rel="noopener">Fall 2024</a>, Spring 2023)</li>
         </ul>
       </li>
       <li>
         <strong>Undergraduate courses</strong>
         <ul>
-          <li><em>Introduction to International Relations</em> — Teaching Assistant / Grader; Spring 2026, Spring 2024, Fall 2023</li>
-          <li><em>Applied Political Behavior</em> — Grader; Fall 2022</li>
-          <li><em>West European Politics</em> — Grader; Fall 2022</li>
+          <li><em>Introduction to International Relations</em> (Spring 2026, Spring 2024, <a href="/files/teaching/inr2001_fall2023_eval.pdf" target="_blank" rel="noopener">Fall 2023</a>)</li>
+          <li><em>Applied Political Behavior</em> (Fall 2022)</li>
+          <li><em>West European Politics</em> (Fall 2022)</li>
         </ul>
       </li>
     </ul>
@@ -40,113 +40,7 @@ author_profile: true
   <li>
     <strong>Seoul National University</strong>
     <ul>
-      <li><em>Introduction to International Politics</em> — Teaching Assistant / Grader; Fall 2020, Summer 2020, Spring 2020, Winter 2019, Fall 2019, Summer 2019</li>
+      <li><em>Introduction to International Politics</em> (Fall 2020, Summer 2020, Spring 2020, Winter 2019, Fall 2019, Summer 2019)</li>
     </ul>
   </li>
-</ul>
-
-<h2>Course Evaluations</h2>
-
-<p>
-Select a course and semester to open the corresponding evaluation PDF. Evaluations are listed for semesters with an available file.
-</p>
-
-<div id="course-evaluation-selector">
-  <p>
-    <label for="evaluation-course"><strong>Course</strong></label><br>
-    <select id="evaluation-course" style="min-width: 20rem;">
-      <option value="">Select a course</option>
-      <option value="pda">Political Data Analysis (POS 6737)</option>
-      <option value="inr">Introduction to International Relations (INR 2001)</option>
-    </select>
-  </p>
-
-  <p>
-    <label for="evaluation-term"><strong>Semester</strong></label><br>
-    <select id="evaluation-term" style="min-width: 20rem;" disabled>
-      <option value="">Select a course first</option>
-    </select>
-  </p>
-
-  <p>
-    <button type="button" id="open-evaluation" disabled>Open evaluation PDF</button>
-  </p>
-
-  <p id="evaluation-note" aria-live="polite">Choose a course and semester.</p>
-</div>
-
-<script>
-(function () {
-  const evaluations = {
-    pda: {
-      terms: [
-        {
-          label: "Fall 2024",
-          url: "/files/teaching/pda_fall2024_eval.pdf"
-        }
-      ]
-    },
-    inr: {
-      terms: [
-        {
-          label: "Fall 2023",
-          url: "/files/teaching/inr2001_fall2023_eval.pdf"
-        }
-      ]
-    }
-  };
-
-  const courseSelect = document.getElementById("evaluation-course");
-  const termSelect = document.getElementById("evaluation-term");
-  const openButton = document.getElementById("open-evaluation");
-  const note = document.getElementById("evaluation-note");
-
-  function openEvaluation() {
-    if (!termSelect.value) return;
-    window.open(termSelect.value, "_blank", "noopener");
-  }
-
-  courseSelect.addEventListener("change", function () {
-    const course = evaluations[courseSelect.value];
-
-    termSelect.innerHTML = "";
-
-    if (!course) {
-      termSelect.disabled = true;
-      termSelect.appendChild(new Option("Select a course first", ""));
-      openButton.disabled = true;
-      note.textContent = "Choose a course and semester.";
-      return;
-    }
-
-    termSelect.appendChild(new Option("Select a semester", ""));
-    course.terms.forEach(function (term) {
-      termSelect.appendChild(new Option(term.label, term.url));
-    });
-
-    termSelect.disabled = false;
-    openButton.disabled = true;
-    note.textContent = "Select a semester to open its evaluation PDF.";
-  });
-
-  termSelect.addEventListener("change", function () {
-    const selected = termSelect.value;
-    openButton.disabled = !selected;
-
-    if (selected) {
-      note.textContent = "Opening the selected evaluation PDF...";
-      openEvaluation();
-    } else {
-      note.textContent = "Select a semester to open its evaluation PDF.";
-    }
-  });
-
-  openButton.addEventListener("click", openEvaluation);
-})();
-</script>
-
-<h2>Teaching Development</h2>
-
-<ul>
-  <li><em>Preparing Future Faculty Program</em>, Office of Graduate Professional Development, University of Florida (Fall 2026)</li>
 </ul>
