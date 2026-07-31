@@ -1,97 +1,150 @@
 ---
-layout: single
+layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
-<table style="margin-top: 0.6rem;">
-  <thead>
-    <tr>
-      <th>Level</th>
-      <th>Course</th>
-      <th>Term(s)</th>
-      <th>Role</th>
-      <th>Institution</th>
-      <th>Evaluation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Graduate</td>
-      <td>Bayesian Modeling for the Social Sciences I</td>
-      <td>Summer 2025</td>
-      <td>TA</td>
-      <td>ICPSR, University of Michigan</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>Graduate</td>
-      <td>Introduction to Python</td>
-      <td>Summer 2025</td>
-      <td>TA</td>
-      <td>ICPSR, University of Michigan</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>Graduate</td>
-      <td>Linear Models</td>
-      <td>Spring 2025</td>
-      <td>TA / Grader</td>
-      <td>University of Florida</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>Graduate</td>
-      <td>Political Data Analysis</td>
-      <td>Fall 2025, Fall 2024, Spring 2023</td>
-      <td>TA / Grader</td>
-      <td>University of Florida</td>
-      <td>
-        <a href="/files/teaching/pda_fall2024_eval.pdf" target="_blank" rel="noopener">
-          PDF
-        </a>
-      </td>
-    </tr>
+<p>
+My teaching experience spans quantitative methods, international relations, and political behavior. I have served as a teaching assistant and grader at the University of Michigan's ICPSR, the University of Florida, and Seoul National University.
+</p>
 
-    <tr>
-      <td>Undergraduate</td>
-      <td>Introduction to International Relations</td>
-      <td>Spring 2026, Spring 2024, Fall 2023</td>
-      <td>TA / Grader</td>
-      <td>University of Florida</td>
-      <td>
-        <a href="/files/teaching/inr2001_fall2023_eval.pdf" target="_blank" rel="noopener">
-          PDF
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>Undergraduate</td>
-      <td>Applied Political Behavior</td>
-      <td>Fall 2022</td>
-      <td>Grader</td>
-      <td>University of Florida</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>Undergraduate</td>
-      <td>West European Politics</td>
-      <td>Fall 2022</td>
-      <td>Grader</td>
-      <td>University of Florida</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>Undergraduate</td>
-      <td>Introduction to International Politics</td>
-      <td>
-        Fall 2020, Summer 2020, Spring 2020, Winter 2019,
-        Fall 2019, Summer 2019
-      </td>
-      <td>TA / Grader</td>
-      <td>Seoul National University</td>
-      <td>—</td>
-    </tr>
-  </tbody>
-</table>
+<h2>University of Michigan — ICPSR</h2>
+
+<h3><em>Bayesian Modeling for the Social Sciences I</em></h3>
+<p>Teaching Assistant · Summer 2026; Summer 2025</p>
+
+<h3><em>Introduction to Computing for Data Analysis</em></h3>
+<p>Teaching Assistant · Summer 2026</p>
+
+<h3><em>Introduction to the LaTeX Text Processing System</em></h3>
+<p>Teaching Assistant · Summer 2026</p>
+
+<h3><em>Introduction to Python</em></h3>
+<p>Teaching Assistant · Summer 2025</p>
+
+<h2>University of Florida</h2>
+
+<h3>Graduate Courses</h3>
+
+<h4><em>Linear Models</em></h4>
+<p>Teaching Assistant / Grader · Spring 2025</p>
+
+<h4><em>Political Data Analysis</em></h4>
+<p>Teaching Assistant / Grader · Fall 2026; Fall 2025; Fall 2024; Spring 2023</p>
+
+<h3>Undergraduate Courses</h3>
+
+<h4><em>Introduction to International Relations</em></h4>
+<p>Teaching Assistant / Grader · Spring 2026; Spring 2024; Fall 2023</p>
+
+<h4><em>Applied Political Behavior</em></h4>
+<p>Grader · Fall 2022</p>
+
+<h4><em>West European Politics</em></h4>
+<p>Grader · Fall 2022</p>
+
+<h2>Seoul National University</h2>
+
+<h3><em>Introduction to International Politics</em></h3>
+<p>Teaching Assistant / Grader · Fall 2020; Summer 2020; Spring 2020; Winter 2019; Fall 2019; Summer 2019</p>
+
+<h2>Course Evaluations</h2>
+
+<p>
+Select a course and semester to open the corresponding evaluation PDF. Evaluations are listed for semesters with an available file.
+</p>
+
+<div id="course-evaluation-selector">
+  <p>
+    <label for="evaluation-course"><strong>Course</strong></label><br>
+    <select id="evaluation-course" style="min-width: 20rem;">
+      <option value="">Select a course</option>
+      <option value="pda">Political Data Analysis (POS 6737)</option>
+      <option value="inr">Introduction to International Relations (INR 2001)</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="evaluation-term"><strong>Semester</strong></label><br>
+    <select id="evaluation-term" style="min-width: 20rem;" disabled>
+      <option value="">Select a course first</option>
+    </select>
+  </p>
+
+  <p>
+    <button type="button" id="open-evaluation" disabled>Open evaluation PDF</button>
+  </p>
+
+  <p id="evaluation-note" aria-live="polite">Choose a course and semester.</p>
+</div>
+
+<script>
+(function () {
+  const evaluations = {
+    pda: {
+      terms: [
+        {
+          label: "Fall 2024",
+          url: "/files/teaching/pda_fall2024_eval.pdf"
+        }
+      ]
+    },
+    inr: {
+      terms: [
+        {
+          label: "Fall 2023",
+          url: "/files/teaching/inr2001_fall2023_eval.pdf"
+        }
+      ]
+    }
+  };
+
+  const courseSelect = document.getElementById("evaluation-course");
+  const termSelect = document.getElementById("evaluation-term");
+  const openButton = document.getElementById("open-evaluation");
+  const note = document.getElementById("evaluation-note");
+
+  function openEvaluation() {
+    if (!termSelect.value) return;
+    window.open(termSelect.value, "_blank", "noopener");
+  }
+
+  courseSelect.addEventListener("change", function () {
+    const course = evaluations[courseSelect.value];
+
+    termSelect.innerHTML = "";
+
+    if (!course) {
+      termSelect.disabled = true;
+      termSelect.appendChild(new Option("Select a course first", ""));
+      openButton.disabled = true;
+      note.textContent = "Choose a course and semester.";
+      return;
+    }
+
+    termSelect.appendChild(new Option("Select a semester", ""));
+    course.terms.forEach(function (term) {
+      termSelect.appendChild(new Option(term.label, term.url));
+    });
+
+    termSelect.disabled = false;
+    openButton.disabled = true;
+    note.textContent = "Select a semester to open its evaluation PDF.";
+  });
+
+  termSelect.addEventListener("change", function () {
+    const selected = termSelect.value;
+    openButton.disabled = !selected;
+
+    if (selected) {
+      note.textContent = "Opening the selected evaluation PDF...";
+      openEvaluation();
+    } else {
+      note.textContent = "Select a semester to open its evaluation PDF.";
+    }
+  });
+
+  openButton.addEventListener("click", openEvaluation);
+})();
+</script>
