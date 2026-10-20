@@ -7,10 +7,10 @@ redirect_from:
   - /resume
 ---
 
-[Download CV (PDF)](/files/cv_2026.pdf)
+[Download CV (PDF)](/files/cv.pdf)
 
 <iframe
-  src="/files/cv_2026.pdf"
+  src="/files/cv.pdf"
   width="100%"
   height="1000px"
   style="border: 1px solid #ddd; border-radius: 8px;"
