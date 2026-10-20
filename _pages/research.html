@@ -8,52 +8,54 @@ author_profile: true
 <style>
 .research-entry { margin-bottom: 1.25rem; }
 .research-entry__title { margin: 0 0 0.3rem; }
-.research-entry__details { display: inline-block; vertical-align: top; margin-right: 0.45rem; }
-.research-entry__details[open] { display: block; }
-.research-entry__details summary { display: inline; list-style: none; cursor: pointer; color: #52adc8; text-decoration: underline; }
-.research-entry__details summary::-webkit-details-marker { display: none; }
-.research-entry__details summary:hover { color: #3e8296; text-decoration: underline; }
-.research-entry__details summary:focus-visible { outline: 2px solid #52adc8; outline-offset: 2px; }
-.research-entry__details p { margin: 0.5rem 0 0; }
+.research-entry__links { display: flex; align-items: baseline; flex-wrap: wrap; column-gap: 0.45rem; }
+.research-entry__toggle { flex: none; }
+.research-entry__toggle summary { list-style: none; cursor: pointer; }
+.research-entry__toggle summary::-webkit-details-marker { display: none; }
+.research-entry__toggle summary a { cursor: pointer; }
+.research-entry__toggle summary:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.research-entry__expanded { display: none; margin-top: 0.5rem; }
+.research-entry__links:has(> .research-entry__toggle[open]) + .research-entry__expanded { display: block; }
+.research-entry__expanded p { margin: 0 0 0.5rem; }
 </style>
 
 <h2>Dissertation Project</h2>
 
 <div class="research-entry">
   <p class="research-entry__title"><em>Discrimination and the Boundaries of Political Inclusion</em></p>
-  <details class="research-entry__details">
-    <summary>[project overview]</summary>
-    <p>
-      Experiences of discrimination can reveal vulnerabilities shared with people beyond one's own group, creating the possibility of cross-group solidarity. Yet experiences of disadvantage can also coincide with exclusionary attitudes.
-    </p>
-    <p>
-      My dissertation examines when experiences of discrimination and marginalization are associated with political inclusion rather than exclusion. Drawing on the European Social Survey, American National Election Studies, and Afrobarometer, the project investigates attitudes toward immigrants in Europe, political tolerance in the United States, and cross-group attitudes in African countries.
-    </p>
-    <p>
-      Together, these three empirical chapters examine how the relationship between experienced marginalization and political inclusion varies across different social and political contexts.
-    </p>
-  </details>
+  <div class="research-entry__links">
+    <details class="research-entry__toggle">
+      <summary aria-controls="dissertation-overview"><a>[project overview]</a></summary>
+    </details>
+  </div>
+  <div class="research-entry__expanded" id="dissertation-overview">
+    <p>Experiences of discrimination can reveal vulnerabilities shared with people beyond one's own group, creating the possibility of cross-group solidarity. Yet experiences of disadvantage can also coincide with exclusionary attitudes. My dissertation examines when experiences of discrimination and marginalization are associated with political inclusion rather than exclusion. Drawing on the European Social Survey, American National Election Studies, and Afrobarometer, the project investigates attitudes toward immigrants in Europe, political tolerance in the United States, and cross-group attitudes in African countries. Together, these three empirical chapters examine how the relationship between experienced marginalization and political inclusion varies across different social and political contexts.</p>
+  </div>
 </div>
 
 <h2>Working Papers</h2>
 
 <div class="research-entry">
   <p class="research-entry__title"><em>Solidarity or Exclusion? Discrimination Involving Sexuality and Attitudes toward Immigrants in Europe</em></p>
-  <details class="research-entry__details">
-    <summary>[abstract]</summary>
-    <p>
-      Do experiences of discrimination foster solidarity with other marginalized groups, or reinforce exclusion? Using European Social Survey Round 10 data from 31 countries, this paper examines whether discrimination involving sexuality is associated with attitudes toward immigrants. Bayesian hierarchical ordered-logit models estimate respondents' evaluations of immigrants' effects on the economy, culture, and their country. The findings are consistent with an interminority solidarity account: respondents who report discrimination involving sexuality tend to express more favorable attitudes toward immigrants. The study links lived experiences of marginalization to attitudes toward another marginalized population and contributes to research on discrimination, group consciousness, and public opinion.
-    </p>
-  </details>
-  <a href="/files/research/jain_choi_priec_presentation.pdf" target="_blank" rel="noopener">[presentation]</a>
+  <div class="research-entry__links">
+    <details class="research-entry__toggle">
+      <summary aria-controls="solidarity-abstract"><a>[abstract]</a></summary>
+    </details>
+    <a href="/files/research/jain_choi_priec_presentation.pdf" target="_blank" rel="noopener">[presentation]</a>
+  </div>
+  <div class="research-entry__expanded" id="solidarity-abstract">
+    <p>Do experiences of discrimination foster solidarity with other marginalized groups, or reinforce exclusion? Using European Social Survey Round 10 data from 31 countries, this paper examines whether discrimination involving sexuality is associated with attitudes toward immigrants. Bayesian hierarchical ordered-logit models estimate respondents' evaluations of immigrants' effects on the economy, culture, and their country. The findings are consistent with an interminority solidarity account: respondents who report discrimination involving sexuality tend to express more favorable attitudes toward immigrants. The study links lived experiences of marginalization to attitudes toward another marginalized population and contributes to research on discrimination, group consciousness, and public opinion.</p>
+  </div>
 </div>
 
 <div class="research-entry">
   <p class="research-entry__title"><em>Forecasting African Countries' Co-Participation with China in UN Peacekeeping Operations</em></p>
-  <details class="research-entry__details">
-    <summary>[abstract]</summary>
-    <p>
-      What explains African countries' participation in UN peacekeeping operations alongside China? This paper examines whether China-Africa economic ties are associated with African countries' co-participation in UN peacekeeping operations. Using country-year data from 1990 to 2020, it combines trade-based measures of economic relations with pooled and fixed-effects logistic regression and random-forest models. The analysis treats the study as a forecasting and association exercise rather than a causal test, evaluating whether patterns of economic ties help predict when African states participate in peacekeeping missions with China. The project contributes to debates about China's role in Africa and the changing international peacekeeping order.
-    </p>
-  </details>
+  <div class="research-entry__links">
+    <details class="research-entry__toggle">
+      <summary aria-controls="peacekeeping-abstract"><a>[abstract]</a></summary>
+    </details>
+  </div>
+  <div class="research-entry__expanded" id="peacekeeping-abstract">
+    <p>What explains African countries' participation in UN peacekeeping operations alongside China? This paper examines whether China-Africa economic ties are associated with African countries' co-participation in UN peacekeeping operations. Using country-year data from 1990 to 2020, it combines trade-based measures of economic relations with pooled and fixed-effects logistic regression and random-forest models. The analysis treats the study as a forecasting and association exercise rather than a causal test, evaluating whether patterns of economic ties help predict when African states participate in peacekeeping missions with China. The project contributes to debates about China's role in Africa and the changing international peacekeeping order.</p>
+  </div>
 </div>
