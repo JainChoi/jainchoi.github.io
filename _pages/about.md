@@ -4,10 +4,12 @@ permalink: /
 author_profile: true
 ---
 
-Welcome! I am a doctoral student in Political Science at the University of Florida, specializing in International Relations and Political Methodology. My research lies at the intersection of international relations, political psychology, and computational social science.
+Welcome! I am a Ph.D. candidate in Political Science at the University of Florida, specializing in International Relations and Political Methodology.
 
-My research is organized around two strands. One strand examines how experiences of marginalization and discrimination foster—or constrain—solidarity across social groups and influence attitudes toward immigration and foreign policy. The second investigates how China’s rise and U.S.–China competition reshape state behavior, international institutions, and relations with the Global South.
+My research is motivated by a broad question: **How does suffering shape the way people understand themselves, others, and the political world?** I am particularly interested in how people make sense of their own suffering and why such experiences sometimes foster solidarity across social group boundaries while, at other times, reinforcing exclusion.
 
-I use quantitative and computational methods, including survey experiments, Bayesian modeling, machine learning, text analysis, and emerging AI-based approaches.
+My dissertation explores one dimension of this broader question by examining how experiences of discrimination and marginalization relate to political attitudes across social group boundaries, particularly toward immigrants and other marginalized populations. Drawing on survey data from Europe, the United States, and Africa, I investigate these relationships using quantitative methods.
+
+My broader research interests include political psychology, public opinion, political participation, and computational social science.
 
 I received my M.A. in International Relations from Seoul National University and my B.A. in Political Science and International Relations from Chonnam National University. I am originally from Busan, South Korea.
